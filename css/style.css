@@ -163,7 +163,7 @@ body {
 .mobile-nav-on {
   overflow: hidden;
 }
-.emoji {
+img.emoji {
   height: 1.2em;
 }
 #wrap {
