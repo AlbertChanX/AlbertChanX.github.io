@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>How-to-use-MarkDown</title>
-      <link href="/2018/03/19/How-to-use-MarkDown/"/>
-      <content type="html"><![CDATA[<h1>Markdown syntax</h1><h2 id="quick-start"><a class="header-anchor" href="#quick-start">¶</a>Quick Start</h2><p>pls don’t start with emoj!<img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"></p><h3 id="styling-text"><a class="header-anchor" href="#styling-text">¶</a>styling-text</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*italic*</span><br><span class="line">**bold**</span><br><span class="line">~~Strikethrough~~</span><br><span class="line">**This text is _extremely_ important**</span><br></pre></td></tr></table></figure><p><em>italic</em> <strong>bold</strong> <s>Strikethrough</s></p><p><strong>This text is <em>extremely</em> important</strong></p><p>More info: <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#styling-text" target="_blank" rel="noopener">styling-text</a></p><h3 id="quoting-code"><a class="header-anchor" href="#quoting-code">¶</a>Quoting code</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Some basic Git commands are:</span><br><span class="line">`` ``` ``</span><br><span class="line">git status</span><br><span class="line">git add</span><br><span class="line">git commit</span><br><span class="line">`` ``` ``</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add</span><br><span class="line">git commit</span><br></pre></td></tr></table></figure><p>For more information, see <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks" target="_blank" rel="noopener">creating-and-highlighting-code-blocks</a></p><h3 id="links"><a class="header-anchor" href="#links">¶</a>Links</h3><p>You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut command + k to create a link.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This site was built using [GitHub Pages](https://pages.github.com/).</span><br></pre></td></tr></table></figure><h3 id="task-lists"><a class="header-anchor" href="#task-lists">¶</a>Task lists</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- [x] Finish my changes</span><br><span class="line">- [ ] Push my commits to GitHub</span><br><span class="line">- [ ] Open a pull request</span><br></pre></td></tr></table></figure><p>like this:</p><ul><li>[x] Finish my changes</li><li>[ ] Push my commits to GitHub</li><li>[ ] Open a pull request</li></ul><h3 id="using-emoji"><a class="header-anchor" href="#using-emoji">¶</a>Using emoji</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@octocat :+1: This PR looks great - it&apos;s ready to merge! :shipit:</span><br></pre></td></tr></table></figure><p>@octocat <img class="emoji" draggable="false" alt="👍" src="https://twemoji.maxcdn.com/2/72x72/1f44d.png"> This PR looks great - it’s ready to merge! :shipit:</p><p>For a full list of available emoji and codes, check out <a href="http://emoji-cheat-sheet.com/" target="_blank" rel="noopener">emoji-cheat-sheet.com</a>.</p><h2 id="reference"><a class="header-anchor" href="#reference">¶</a>Reference</h2><p><strong><a href="https://help.github.com/categories/writing-on-github/" target="_blank" rel="noopener">writing-on-github</a></strong></p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> MarkDown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>test</title>
-      <link href="/2018/03/18/test/"/>
-      <content type="html"><![CDATA[]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/03/18/hello-world/"/>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="quick-start"><a class="header-anchor" href="#quick-start">¶</a>Quick Start</h2><h3 id="create-a-new-post"><a class="header-anchor" href="#create-a-new-post">¶</a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="run-server"><a class="header-anchor" href="#run-server">¶</a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="generate-static-files"><a class="header-anchor" href="#generate-static-files">¶</a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="header-anchor" href="#deploy-to-remote-sites">¶</a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h2 id="hexo-plugin"><a class="header-anchor" href="#hexo-plugin">¶</a>Hexo Plugin</h2><p>More info: <a href="http://very9s.net/post/hexo-support-emoji/" target="_blank" rel="noopener">markdown-it-emoji</a><br><a href="https://segmentfault.com/a/1190000009478837" target="_blank" rel="noopener">CSS</a><br><strong><a href="http://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">hexo-generator-search</a></strong><br><a href="https://www.ezlippi.com/blog/2017/02/hexo-search.html" target="_blank" rel="noopener">search</a></p>]]></content>
-      
-      
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[How-to-use-MarkDown]]></title>
+    <url>%2F2018%2F03%2F19%2FHow-to-use-MarkDown%2F</url>
+    <content type="text"><![CDATA[Markdown syntax ¶Quick Start pls don’t start with emoj! ¶styling-text 1234*italic***bold**~~Strikethrough~~**This text is _extremely_ important** italic bold Strikethrough This text is extremely important More info: styling-text ¶Quoting code 123456Some basic Git commands are:`` ``` ``git statusgit addgit commit`` ``` `` 123git statusgit addgit commit For more information, see creating-and-highlighting-code-blocks ¶Links You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut command + k to create a link. 1This site was built using [GitHub Pages](https://pages.github.com/). ¶Task lists 123- [x] Finish my changes- [ ] Push my commits to GitHub- [ ] Open a pull request like this: [x] Finish my changes [ ] Push my commits to GitHub [ ] Open a pull request ¶Using emoji 1@octocat :+1: This PR looks great - it&apos;s ready to merge! :shipit: @octocat This PR looks great - it’s ready to merge! :shipit: For a full list of available emoji and codes, check out emoji-cheat-sheet.com. ¶Reference writing-on-github]]></content>
+      <tags>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2018%2F03%2F18%2Ftest%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F03%2F18%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. ¶Quick Start ¶Create a new post 1$ hexo new "My New Post" More info: Writing ¶Run server 1$ hexo server More info: Server ¶Generate static files 1$ hexo generate More info: Generating ¶Deploy to remote sites 1$ hexo deploy More info: Deployment ¶Hexo Plugin More info: markdown-it-emoji CSS hexo-generator-search search]]></content>
+  </entry>
 </search>
