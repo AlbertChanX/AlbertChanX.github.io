@@ -163,6 +163,9 @@ body {
 .mobile-nav-on {
   overflow: hidden;
 }
+.emoji {
+  height: 1.2em;
+}
 #wrap {
   height: 100%;
   width: 100%;
@@ -1371,7 +1374,4 @@ pre .javascript .function {
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
-}
-.emoji {
-  height: 1.2em;
 }
