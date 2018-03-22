@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="¶PythonAnyWhere with Django  clone in ur console  1git clone (my-first-blog)  make a virtual environment  1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&#39;run-Django-Website-on-pythonanywhere&#39;">
+<meta property="og:title" content="run-Django-Website-on-pythonanywhere">
 <meta property="og:url" content="http://githubcyc.github.io/2018/03/21/run-Django-Website-on-pythonanywhere/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
+<meta property="og:description" content="¶PythonAnyWhere with Django  clone in ur console  1git clone (my-first-blog)  make a virtual environment  1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-21T13:50:30.295Z">
+<meta property="og:updated_time" content="2018-03-22T09:06:59.292Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="&#39;run-Django-Website-on-pythonanywhere&#39;">
+<meta name="twitter:title" content="run-Django-Website-on-pythonanywhere">
+<meta name="twitter:description" content="¶PythonAnyWhere with Django  clone in ur console  1git clone (my-first-blog)  make a virtual environment  1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/">
 
 
 
@@ -122,7 +125,7 @@
 
 
 
-  <title>'run-Django-Website-on-pythonanywhere' | Jay's Blog</title>
+  <title>run-Django-Website-on-pythonanywhere | Jay's Blog</title>
   
 
 
@@ -314,7 +317,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">'run-Django-Website-on-pythonanywhere'</h1>
+          <h1 class="post-title" itemprop="name headline">run-Django-Website-on-pythonanywhere</h1>
         
 
         <div class="post-meta">
@@ -364,7 +367,45 @@
       
 
       
-        
+        <h2 id="pythonanywhere-with-django"><a class="header-anchor" href="#pythonanywhere-with-django">¶</a>PythonAnyWhere with Django</h2>
+<ul>
+<li>clone in ur console</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> (my-first-blog)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>make a virtual environment</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> my-first-blog</span><br><span class="line">$ virtualenv --python=python(version eg. 3.6) myvenv</span><br><span class="line">$ <span class="built_in">source</span> myvenv/bin/activate</span><br><span class="line">(myvenv) $ pip install django==(version)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>initial ur database</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(myvenv) $ python manage.py migrate (check lib&amp;db)</span><br><span class="line">&lt;!-- python manage.py makemigrations --&gt;</span><br><span class="line">(myvenv) $ python manage.py createsuperuser</span><br></pre></td></tr></table></figure>
+<ul>
+<li>publish Web App</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Web tab -&gt; click “Add a new web app”</span><br><span class="line">-&gt; verify domain -&gt; choose manual configuration(not &apos;Django&apos;) </span><br><span class="line">-&gt; choose Python(version) -&gt; Next to end.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>deploy app’s virtual environment</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Web tab -&gt; Virtualenv </span><br><span class="line">-&gt; write down the location of (myvenv)[/home/username/my-first-blog/myvenv]</span><br><span class="line">-&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>config <a href="http://wsgi.py" target="_blank" rel="noopener">wsgi.py</a><br>
+go to WSGI configuration file</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># replace [actual varible]</span></span><br><span class="line">path = <span class="string">'/home/[username]/[my-first-blog]'</span>  </span><br><span class="line"><span class="keyword">if</span> path <span class="keyword">not</span> <span class="keyword">in</span> sys.path:</span><br><span class="line">    sys.path.append(path)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在这里mysite请用settings.py所在文件夹名 (app Name)</span></span><br><span class="line">os.environ[<span class="string">'DJANGO_SETTINGS_MODULE'</span>] = <span class="string">'mysite.settings'</span> </span><br><span class="line"><span class="keyword">from</span> django.core.wsgi <span class="keyword">import</span> get_wsgi_application</span><br><span class="line"><span class="keyword">from</span> django.contrib.staticfiles.handlers <span class="keyword">import</span> StaticFilesHandler</span><br><span class="line">application = StaticFilesHandler(get_wsgi_application())</span><br></pre></td></tr></table></figure>
+<p>change <a href="http://settings.py" target="_blank" rel="noopener">settings.py</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALLOWED_HOSTS = [<span class="string">'*'</span>]</span><br></pre></td></tr></table></figure>
+<ul>
+<li>synchronize app</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-first-blog</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h2 id="reference"><a class="header-anchor" href="#reference">¶</a>Reference</h2>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000009240824" target="_blank" rel="noopener">使用PythonAnyWhere和GitHub免费部署Django网站 - 潜入深蓝 - SegmentFault 思否</a></li>
+<li><a href="https://www.jianshu.com/p/937694906ec0" target="_blank" rel="noopener">Pythonanywhere 部署 Django - 简书</a></li>
+<li><a href="https://www.jianshu.com/p/727dc7631274?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation" target="_blank" rel="noopener">【兰山问题】Django中的静态文件 - 简书</a></li>
+</ul>
+
       
     </div>
     
@@ -388,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/21/pythonanywhere/" rel="next" title="pythonanywhere'">
-                <i class="fa fa-chevron-left"></i> pythonanywhere'
+              <a href="/2018/03/19/How-to-use-MarkDown/" rel="next" title="How-to-use-MarkDown">
+                <i class="fa fa-chevron-left"></i> How-to-use-MarkDown
               </a>
             
           </div>
@@ -448,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -464,7 +514,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -500,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pythonanywhere-with-django"><span class="nav-number">1.</span> <span class="nav-text">¶PythonAnyWhere with Django</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reference"><span class="nav-number">2.</span> <span class="nav-text">¶Reference</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

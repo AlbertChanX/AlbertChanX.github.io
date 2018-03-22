@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA['run-Django-Website-on-pythonanywhere']]></title>
+    <title><![CDATA[run-Django-Website-on-pythonanywhere]]></title>
     <url>%2F2018%2F03%2F21%2Frun-Django-Website-on-pythonanywhere%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[pythonanywhere']]></title>
-    <url>%2F2018%2F03%2F21%2Fpythonanywhere%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[¶PythonAnyWhere with Django clone in ur console 1git clone (my-first-blog) make a virtual environment 1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/activate(myvenv) $ pip install django==(version) initial ur database 123(myvenv) $ python manage.py migrate (check lib&amp;db)&lt;!-- python manage.py makemigrations --&gt;(myvenv) $ python manage.py createsuperuser publish Web App 123Web tab -&gt; click “Add a new web app”-&gt; verify domain -&gt; choose manual configuration(not &apos;Django&apos;) -&gt; choose Python(version) -&gt; Next to end. deploy app’s virtual environment 123Web tab -&gt; Virtualenv -&gt; write down the location of (myvenv)[/home/username/my-first-blog/myvenv]-&gt; config wsgi.py go to WSGI configuration file 12345678910111213import osimport sys# replace [actual varible]path = '/home/[username]/[my-first-blog]' if path not in sys.path: sys.path.append(path)# 在这里mysite请用settings.py所在文件夹名 (app Name)os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings' from django.core.wsgi import get_wsgi_applicationfrom django.contrib.staticfiles.handlers import StaticFilesHandlerapplication = StaticFilesHandler(get_wsgi_application()) change settings.py 1ALLOWED_HOSTS = ['*'] synchronize app 12cd my-first-bloggit pull ¶Reference 使用PythonAnyWhere和GitHub免费部署Django网站 - 潜入深蓝 - SegmentFault 思否 Pythonanywhere 部署 Django - 简书 【兰山问题】Django中的静态文件 - 简书]]></content>
   </entry>
   <entry>
     <title><![CDATA[How-to-use-MarkDown]]></title>
