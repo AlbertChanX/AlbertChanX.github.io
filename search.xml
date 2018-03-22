@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA['run-Django-Website-on-pythonanywhere']]></title>
+    <url>%2F2018%2F03%2F21%2Frun-Django-Website-on-pythonanywhere%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[pythonanywhere']]></title>
+    <url>%2F2018%2F03%2F21%2Fpythonanywhere%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[How-to-use-MarkDown]]></title>
     <url>%2F2018%2F03%2F19%2FHow-to-use-MarkDown%2F</url>
     <content type="text"><![CDATA[Markdown syntax ¶Quick Start pls don’t start with emoj! ¶styling-text 1234*italic***bold**~~Strikethrough~~**This text is _extremely_ important** italic bold Strikethrough This text is extremely important More info: styling-text ¶Quoting code 123456Some basic Git commands are:`` ``` ``git statusgit addgit commit`` ``` `` 123git statusgit addgit commit For more information, see creating-and-highlighting-code-blocks ¶Links You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut command + k to create a link. 1This site was built using [GitHub Pages](https://pages.github.com/). ¶Task lists 123- [x] Finish my changes- [ ] Push my commits to GitHub- [ ] Open a pull request like this: [x] Finish my changes [ ] Push my commits to GitHub [ ] Open a pull request ¶Using emoji 1@octocat :+1: This PR looks great - it&apos;s ready to merge! :shipit: @octocat This PR looks great - it’s ready to merge! :shipit: For a full list of available emoji and codes, check out emoji-cheat-sheet.com. ¶Reference writing-on-github]]></content>
