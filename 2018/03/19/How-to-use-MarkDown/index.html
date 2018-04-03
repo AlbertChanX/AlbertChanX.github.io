@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="Markdown syntax ¶Quick Start pls don’t start with emoj! ¶styling-text 1234*italic***bold**~~Strikethrough~~**This text is _extremely_ important** italic bold Strikethrough This text is extremely impor">
+<meta name="description" content="Markdown syntax">
 <meta name="keywords" content="MarkDown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How-to-use-MarkDown">
 <meta property="og:url" content="http://githubcyc.github.io/2018/03/19/How-to-use-MarkDown/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="Markdown syntax ¶Quick Start pls don’t start with emoj! ¶styling-text 1234*italic***bold**~~Strikethrough~~**This text is _extremely_ important** italic bold Strikethrough This text is extremely impor">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="Markdown syntax">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f604.png">
 <meta property="og:image" content="https://twemoji.maxcdn.com/2/72x72/1f44d.png">
-<meta property="og:updated_time" content="2018-03-19T06:59:59.707Z">
+<meta property="og:updated_time" content="2018-04-03T15:22:53.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How-to-use-MarkDown">
-<meta name="twitter:description" content="Markdown syntax ¶Quick Start pls don’t start with emoj! ¶styling-text 1234*italic***bold**~~Strikethrough~~**This text is _extremely_ important** italic bold Strikethrough This text is extremely impor">
+<meta name="twitter:description" content="Markdown syntax">
 <meta name="twitter:image" content="https://twemoji.maxcdn.com/2/72x72/1f604.png">
 
 
@@ -109,7 +109,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: 'KJ1PILF9HK',
@@ -141,7 +141,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -189,7 +189,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -199,7 +199,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -209,7 +209,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -219,7 +219,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -229,7 +229,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -242,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -252,26 +252,22 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -331,9 +327,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T10:24:53+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-19T10:24:53+08:00">
                 2018-03-19
               </time>
             
@@ -372,6 +368,7 @@
 
       
         <h1>Markdown syntax</h1>
+<a id="more"></a>
 <h2 id="quick-start"><a class="header-anchor" href="#quick-start">¶</a>Quick Start</h2>
 <p>pls don’t start with emoj!<img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"></p>
 <h3 id="styling-text"><a class="header-anchor" href="#styling-text">¶</a>styling-text</h3>
@@ -496,10 +493,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -519,8 +516,8 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -532,8 +529,8 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
                 
               </div>
             
@@ -595,7 +592,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -603,7 +600,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -612,6 +609,15 @@
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65587731";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -1076,19 +1082,6 @@
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 

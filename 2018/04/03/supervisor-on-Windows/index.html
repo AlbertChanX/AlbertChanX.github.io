@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="windows server,python," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jay&#39;s Blog">
-<meta property="og:url" content="http://githubcyc.github.io/tags/MarkDown/index.html">
+<meta name="description" content="run executable file as windows server ¶windows server using sc">
+<meta name="keywords" content="windows server,python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="supervisor-on-Windows">
+<meta property="og:url" content="http://githubcyc.github.io/2018/04/03/supervisor-on-Windows/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
+<meta property="og:description" content="run executable file as windows server ¶windows server using sc">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-04-03T15:50:24.996Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jay&#39;s Blog">
+<meta name="twitter:title" content="supervisor-on-Windows">
+<meta name="twitter:description" content="run executable file as windows server ¶windows server using sc">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://githubcyc.github.io/tags/MarkDown/"/>
+  <link rel="canonical" href="http://githubcyc.github.io/2018/04/03/supervisor-on-Windows/"/>
 
 
 
 
 
-  <title>Tag: MarkDown | Jay's Blog</title>
+  <title>supervisor-on-Windows | Jay's Blog</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,54 +283,206 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>MarkDown<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://githubcyc.github.io/2018/04/03/supervisor-on-Windows/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jay Chow">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/19/How-to-use-MarkDown/" itemprop="url">
-              
-                <span itemprop="name">How-to-use-MarkDown</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">supervisor-on-Windows</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-19T10:24:53+08:00"
-              content="2018-03-19" >
-          03-19
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-03T23:35:00+08:00">
+                2018-04-03
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1>run executable file as windows server</h1>
+<h2 id="windows-server-using-sc"><a class="header-anchor" href="#windows-server-using-sc">¶</a>windows server using sc</h2>
+<a id="more"></a>
+<h3 id="install-pyinstaller-pywin32"><a class="header-anchor" href="#install-pyinstaller-pywin32">¶</a>install pyinstaller pywin32</h3>
+<p>install pywin32 by whl, download in <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank" rel="noopener">pythonlibs</a></p>
+<blockquote>
+<p>refer to <a href="#Reference"><code>R7</code></a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install pyinstaller pypiwin32</span><br><span class="line">pyinstaller -F -i logo.ico --distpath tmp/ &lt;filename&gt;.py</span><br></pre></td></tr></table></figure>
+<h3 id="install-service-in-cmd"><a class="header-anchor" href="#install-service-in-cmd">¶</a>install service in cmd</h3>
+<blockquote>
+<p>refer to <a href="#Reference"><code>R5</code></a></p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sc create &lt;Service Name&gt; binPath= "Demo.exe"</span><br><span class="line">sc config &lt;Service Name&gt; <span class="built_in">start</span>= AUTO</span><br><span class="line"></span><br><span class="line">% <span class="built_in">start</span> service %</span><br><span class="line"><span class="built_in">net</span> <span class="built_in">start</span> &lt;Service Name&gt;  </span><br><span class="line"></span><br><span class="line">sc config TrustedInstaller binpath= "site-packages\win32\PythonService.exe"</span><br><span class="line"></span><br><span class="line">% stop service %</span><br><span class="line"><span class="built_in">net</span> stop &lt;Service Name&gt;  </span><br><span class="line"></span><br><span class="line">% delete service %</span><br><span class="line">sc delete  &lt;Service Name&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="py-service"><a class="header-anchor" href="#py-service">¶</a>py–&gt;service</h2>
+<blockquote>
+<p><a href="#Reference"><code>R8/9</code></a></p>
+</blockquote>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python file.py --startup auto install</span><br><span class="line">python *.py <span class="built_in">start</span>/remove</span><br></pre></td></tr></table></figure>
+<h2 id="some-skills-about-bat"><a class="header-anchor" href="#some-skills-about-bat">¶</a>some skills about bat</h2>
+<blockquote>
+<p>refer to <a href="#Reference"><code>R6</code></a></p>
+</blockquote>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off  </span><br><span class="line"><span class="function">F:  </span></span><br><span class="line"><span class="function"><span class="title">cd</span> <span class="title">F</span>:\<span class="title">test</span></span></span><br><span class="line"><span class="function"><span class="title">start</span> <span class="title">python</span> <span class="title">print.py</span></span></span><br><span class="line"><span class="function"><span class="title">start</span> <span class="title">python</span> 1.<span class="title">py</span> 10</span></span><br><span class="line"><span class="function"><span class="title">exit</span></span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>python wmi</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> wmi</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">listservices</span><span class="params">()</span>:</span></span><br><span class="line">    c = wmi.WMI()</span><br><span class="line">    <span class="keyword">for</span> service <span class="keyword">in</span> c.Win32_Service():</span><br><span class="line">        <span class="comment">#print(service.Caption,service.StartMode,service.State)</span></span><br><span class="line">        print(service.Caption)     <span class="comment">#名称</span></span><br><span class="line">        print(service.StartMode)   <span class="comment">#启动类型</span></span><br><span class="line">        print(service.State)       <span class="comment">#状态</span></span><br></pre></td></tr></table></figure>
+<h2 id="reference"><a class="header-anchor" href="#reference">¶</a>Reference</h2>
+<ol>
+<li>
+<p><a href="https://blog.csdn.net/u014717572/article/details/79204051" target="_blank" rel="noopener">AlwaysUp使用方法 - CSDN博客</a></p>
+</li>
+<li>
+<p><a href="https://segmentfault.com/q/1010000010573898" target="_blank" rel="noopener">npm i pm2 -g - win平台上有没有类似supervisor的进程监控软件？ - SegmentFault 思否</a></p>
+</li>
+<li>
+<p><a href="http://cnodejs.org/topic/53a906a9c3ee0b58202b5ace" target="_blank" rel="noopener">supervisor 与 forever 插件的区别【这2个插件只能用 Linux 系统】 - CNode技术社区</a></p>
+</li>
+<li>
+<p><a href="http://desert3.iteye.com/blog/765968" target="_blank" rel="noopener">用py2exe安装python windows服务 - 如果你真的想做一件事，你一定会找到方法； 如果你不想做一件事，你一定会找到借口。 - ITeye博客</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/moruna/article/details/9190733" target="_blank" rel="noopener">SC命令—安装、开启、配置、关闭windows服务 bat批处理 - CSDN博客</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/dream_allday/article/details/49466553" target="_blank" rel="noopener">bat批处理执行python - CSDN博客</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/m0_37606112/article/details/78568924" target="_blank" rel="noopener">python3.6.3转化为win-exe文件发布 - CSDN博客</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/kongxx/article/details/65435076" target="_blank" rel="noopener">Python制作Windows系统服务 - CSDN博客</a></p>
+</li>
+<li>
+<p><a href="https://www.cnblogs.com/gig886/p/7240630.html" target="_blank" rel="noopener">Python3编写Windows服务程序 - gig886 - 博客园</a></p>
+</li>
+</ol>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/windows-server/" rel="tag"># windows server</a>
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/21/run-Django-Website-on-pythonanywhere/" rel="next" title="run-Django-Website-on-pythonanywhere">
+                <i class="fa fa-chevron-left"></i> run-Django-Website-on-pythonanywhere
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -333,6 +490,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -353,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -405,6 +575,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">run executable file as windows server</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#windows-server-using-sc"><span class="nav-number">1.1.</span> <span class="nav-text">¶windows server using sc</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#install-pyinstaller-pywin32"><span class="nav-number">1.1.1.</span> <span class="nav-text">¶install pyinstaller pywin32</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#install-service-in-cmd"><span class="nav-number">1.1.2.</span> <span class="nav-text">¶install service in cmd</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#py-service"><span class="nav-number">1.2.</span> <span class="nav-text">¶py–&gt;service</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#some-skills-about-bat"><span class="nav-number">1.3.</span> <span class="nav-text">¶some skills about bat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reference"><span class="nav-number">1.4.</span> <span class="nav-text">¶Reference</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -554,6 +740,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

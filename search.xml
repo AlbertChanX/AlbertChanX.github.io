@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[supervisor-on-Windows]]></title>
+    <url>%2F2018%2F04%2F03%2Fsupervisor-on-Windows%2F</url>
+    <content type="text"><![CDATA[run executable file as windows server ¶windows server using sc ¶install pyinstaller pywin32 install pywin32 by whl, download in pythonlibs refer to R7 12pip install pyinstaller pypiwin32pyinstaller -F -i logo.ico --distpath tmp/ &lt;filename&gt;.py ¶install service in cmd refer to R5 12345678910111213sc create &lt;Service Name&gt; binPath= "Demo.exe"sc config &lt;Service Name&gt; start= AUTO% start service %net start &lt;Service Name&gt; sc config TrustedInstaller binpath= "site-packages\win32\PythonService.exe"% stop service %net stop &lt;Service Name&gt; % delete service %sc delete &lt;Service Name&gt; ¶py–&gt;service R8/9 12python file.py --startup auto installpython *.py start/remove ¶some skills about bat refer to R6 123456@echo off F: cd F:\teststart python print.pystart python 1.py 10exit python wmi 123456789import wmidef listservices(): c = wmi.WMI() for service in c.Win32_Service(): #print(service.Caption,service.StartMode,service.State) print(service.Caption) #名称 print(service.StartMode) #启动类型 print(service.State) #状态 ¶Reference AlwaysUp使用方法 - CSDN博客 npm i pm2 -g - win平台上有没有类似supervisor的进程监控软件？ - SegmentFault 思否 supervisor 与 forever 插件的区别【这2个插件只能用 Linux 系统】 - CNode技术社区 用py2exe安装python windows服务 - 如果你真的想做一件事，你一定会找到方法； 如果你不想做一件事，你一定会找到借口。 - ITeye博客 SC命令—安装、开启、配置、关闭windows服务 bat批处理 - CSDN博客 bat批处理执行python - CSDN博客 python3.6.3转化为win-exe文件发布 - CSDN博客 Python制作Windows系统服务 - CSDN博客 Python3编写Windows服务程序 - gig886 - 博客园]]></content>
+      <tags>
+        <tag>windows server</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[run-Django-Website-on-pythonanywhere]]></title>
     <url>%2F2018%2F03%2F21%2Frun-Django-Website-on-pythonanywhere%2F</url>
-    <content type="text"><![CDATA[¶PythonAnyWhere with Django clone in ur console 1git clone (my-first-blog) make a virtual environment 1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/activate(myvenv) $ pip install django==(version) initial ur database 123(myvenv) $ python manage.py migrate (check lib&amp;db)&lt;!-- python manage.py makemigrations --&gt;(myvenv) $ python manage.py createsuperuser publish Web App 123Web tab -&gt; click “Add a new web app”-&gt; verify domain -&gt; choose manual configuration(not &apos;Django&apos;) -&gt; choose Python(version) -&gt; Next to end. deploy app’s virtual environment 123Web tab -&gt; Virtualenv -&gt; write down the location of (myvenv)[/home/username/my-first-blog/myvenv]-&gt; config wsgi.py go to WSGI configuration file 12345678910111213import osimport sys# replace [actual varible]path = '/home/[username]/[my-first-blog]' if path not in sys.path: sys.path.append(path)# 在这里mysite请用settings.py所在文件夹名 (app Name)os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings' from django.core.wsgi import get_wsgi_applicationfrom django.contrib.staticfiles.handlers import StaticFilesHandlerapplication = StaticFilesHandler(get_wsgi_application()) change settings.py 1ALLOWED_HOSTS = ['*'] synchronize app 12cd my-first-bloggit pull ¶Reference 使用PythonAnyWhere和GitHub免费部署Django网站 - 潜入深蓝 - SegmentFault 思否 Pythonanywhere 部署 Django - 简书 【兰山问题】Django中的静态文件 - 简书]]></content>
+    <content type="text"><![CDATA[¶PythonAnyWhere with Django ¶clone in ur console 1git clone (my-first-blog) ¶make a virtual environment 1234$ cd my-first-blog$ virtualenv --python=python(version eg. 3.6) myvenv$ source myvenv/bin/activate(myvenv) $ pip install django==(version) ¶initial ur database 123(myvenv) $ python manage.py migrate (check lib&amp;db)&lt;!-- python manage.py makemigrations --&gt;(myvenv) $ python manage.py createsuperuser ¶publish Web App 123Web tab -&gt; click “Add a new web app”-&gt; verify domain -&gt; choose manual configuration(not &apos;Django&apos;) -&gt; choose Python(version) -&gt; Next to end. ¶deploy app’s virtual environment 123Web tab -&gt; Virtualenv -&gt; write down the location of (myvenv)[/home/username/my-first-blog/myvenv]-&gt; ¶config wsgi.py go to WSGI configuration file 12345678910111213import osimport sys# replace [actual varible]path = '/home/[username]/[my-first-blog]' if path not in sys.path: sys.path.append(path)# 在这里mysite请用settings.py所在文件夹名 (app Name)os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings' from django.core.wsgi import get_wsgi_applicationfrom django.contrib.staticfiles.handlers import StaticFilesHandlerapplication = StaticFilesHandler(get_wsgi_application()) change settings.py 1ALLOWED_HOSTS = ['*'] ¶static files settings find the path of django 1234(myvenv) $ python &gt;&gt;&gt; import django &gt;&gt;&gt; django.__file__ '/usr/local/lib/python2.7/dist-packages/django/__init__.pyc' add in settings.py refer to R3 Django Admin CSS missing - Stack Overflow 123456789# can not figure out it !!!# BASE_DIR = PROJECT DIR/()/staticSTATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\','/')STATICFILES_DIRS = ('(~)/django/contrib/admin/static/' ,)STATIC_URL = '/static/' # generate static files python manage.py collectstatic set in webpage title in &quot;Static files&quot; URL &amp; Directory ¶synchronize app 12cd my-first-bloggit pull ¶Reference 使用PythonAnyWhere和GitHub免费部署Django网站 - 潜入深蓝 - SegmentFault 思否 Pythonanywhere 部署 Django - 简书 【兰山问题】Django中的静态文件 - 简书]]></content>
   </entry>
   <entry>
     <title><![CDATA[How-to-use-MarkDown]]></title>
@@ -21,6 +30,21 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F03%2F18%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. ¶Quick Start ¶Create a new post 1$ hexo new "My New Post" More info: Writing ¶Run server 1$ hexo server More info: Server ¶Generate static files 1$ hexo generate More info: Generating ¶Deploy to remote sites 1$ hexo deploy More info: Deployment ¶Hexo Plugin More info: markdown-it-emoji CSS hexo-generator-search search]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. ¶Quick Start ¶Create a new post 1$ hexo new "My New Post" More info: Writing ¶Run server 1$ hexo server More info: Server ¶Generate static files 1$ hexo generate More info: Generating ¶Deploy to remote sites 1$ hexo deploy More info: Deployment ¶Hexo Plugin More info: markdown-it-emoji CSS hexo-generator-search search 第三方服务集成 - NexT 使用文档]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[about]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
+    <content type="text"></content>
   </entry>
 </search>

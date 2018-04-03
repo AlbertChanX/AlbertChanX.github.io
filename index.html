@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="en,zh-Hans,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,7 +83,7 @@
 <meta property="og:title" content="Jay&#39;s Blog">
 <meta property="og:url" content="http://githubcyc.github.io/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jay&#39;s Blog">
 
@@ -101,7 +101,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: 'KJ1PILF9HK',
@@ -133,7 +133,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -182,7 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -192,7 +192,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -212,7 +212,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -222,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -235,7 +235,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -245,26 +245,22 @@
   
     <div class="site-search">
       
-  
-  <div class="algolia-popup popup search-popup">
-    <div class="algolia-search">
-      <div class="algolia-search-input-icon">
-        <i class="fa fa-search"></i>
-      </div>
-      <div class="algolia-search-input" id="algolia-search-input"></div>
-    </div>
-
-    <div class="algolia-results">
-      <div id="algolia-stats"></div>
-      <div id="algolia-hits"></div>
-      <div id="algolia-pagination" class="algolia-pagination"></div>
-    </div>
-
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
   </div>
-
+  <div id="local-search-result"></div>
+</div>
 
 
 
@@ -283,6 +279,131 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://githubcyc.github.io/2018/04/03/supervisor-on-Windows/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jay Chow">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/03/supervisor-on-Windows/" itemprop="url">supervisor-on-Windows</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-03T23:35:00+08:00">
+                2018-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1>run executable file as windows server</h1>
+<h2 id="windows-server-using-sc"><a class="header-anchor" href="#windows-server-using-sc">¶</a>windows server using sc</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/03/supervisor-on-Windows/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -326,9 +447,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-21T21:49:25+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-21T21:49:25+08:00">
                 2018-03-21
               </time>
             
@@ -367,47 +488,14 @@
 
       
         
-          
-            <h2 id="pythonanywhere-with-django"><a class="header-anchor" href="#pythonanywhere-with-django">¶</a>PythonAnyWhere with Django</h2>
-<ul>
-<li>clone in ur console</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> (my-first-blog)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>make a virtual environment</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> my-first-blog</span><br><span class="line">$ virtualenv --python=python(version eg. 3.6) myvenv</span><br><span class="line">$ <span class="built_in">source</span> myvenv/bin/activate</span><br><span class="line">(myvenv) $ pip install django==(version)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>initial ur database</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(myvenv) $ python manage.py migrate (check lib&amp;db)</span><br><span class="line">&lt;!-- python manage.py makemigrations --&gt;</span><br><span class="line">(myvenv) $ python manage.py createsuperuser</span><br></pre></td></tr></table></figure>
-<ul>
-<li>publish Web App</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Web tab -&gt; click “Add a new web app”</span><br><span class="line">-&gt; verify domain -&gt; choose manual configuration(not &apos;Django&apos;) </span><br><span class="line">-&gt; choose Python(version) -&gt; Next to end.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>deploy app’s virtual environment</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Web tab -&gt; Virtualenv </span><br><span class="line">-&gt; write down the location of (myvenv)[/home/username/my-first-blog/myvenv]</span><br><span class="line">-&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>config <a href="http://wsgi.py" target="_blank" rel="noopener">wsgi.py</a><br>
-go to WSGI configuration file</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># replace [actual varible]</span></span><br><span class="line">path = <span class="string">'/home/[username]/[my-first-blog]'</span>  </span><br><span class="line"><span class="keyword">if</span> path <span class="keyword">not</span> <span class="keyword">in</span> sys.path:</span><br><span class="line">    sys.path.append(path)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在这里mysite请用settings.py所在文件夹名 (app Name)</span></span><br><span class="line">os.environ[<span class="string">'DJANGO_SETTINGS_MODULE'</span>] = <span class="string">'mysite.settings'</span> </span><br><span class="line"><span class="keyword">from</span> django.core.wsgi <span class="keyword">import</span> get_wsgi_application</span><br><span class="line"><span class="keyword">from</span> django.contrib.staticfiles.handlers <span class="keyword">import</span> StaticFilesHandler</span><br><span class="line">application = StaticFilesHandler(get_wsgi_application())</span><br></pre></td></tr></table></figure>
-<p>change <a href="http://settings.py" target="_blank" rel="noopener">settings.py</a></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALLOWED_HOSTS = [<span class="string">'*'</span>]</span><br></pre></td></tr></table></figure>
-<ul>
-<li>synchronize app</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> my-first-blog</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
-<h2 id="reference"><a class="header-anchor" href="#reference">¶</a>Reference</h2>
-<ul>
-<li><a href="https://segmentfault.com/a/1190000009240824" target="_blank" rel="noopener">使用PythonAnyWhere和GitHub免费部署Django网站 - 潜入深蓝 - SegmentFault 思否</a></li>
-<li><a href="https://www.jianshu.com/p/937694906ec0" target="_blank" rel="noopener">Pythonanywhere 部署 Django - 简书</a></li>
-<li><a href="https://www.jianshu.com/p/727dc7631274?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=seo_notes&amp;utm_source=recommendation" target="_blank" rel="noopener">【兰山问题】Django中的静态文件 - 简书</a></li>
-</ul>
-
-          
+          <h2 id="pythonanywhere-with-django"><a class="header-anchor" href="#pythonanywhere-with-django">¶</a>PythonAnyWhere with Django</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/21/run-Django-Website-on-pythonanywhere/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -483,9 +571,9 @@ go to WSGI configuration file</li>
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-19T10:24:53+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-19T10:24:53+08:00">
                 2018-03-19
               </time>
             
@@ -524,38 +612,14 @@ go to WSGI configuration file</li>
 
       
         
-          
-            <h1>Markdown syntax</h1>
-<h2 id="quick-start"><a class="header-anchor" href="#quick-start">¶</a>Quick Start</h2>
-<p>pls don’t start with emoj!<img class="emoji" draggable="false" alt="😄" src="https://twemoji.maxcdn.com/2/72x72/1f604.png"></p>
-<h3 id="styling-text"><a class="header-anchor" href="#styling-text">¶</a>styling-text</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*italic*</span><br><span class="line">**bold**</span><br><span class="line">~~Strikethrough~~</span><br><span class="line">**This text is _extremely_ important**</span><br></pre></td></tr></table></figure>
-<p><em>italic</em> <strong>bold</strong> <s>Strikethrough</s></p>
-<p><strong>This text is <em>extremely</em> important</strong></p>
-<p>More info: <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#styling-text" target="_blank" rel="noopener">styling-text</a></p>
-<h3 id="quoting-code"><a class="header-anchor" href="#quoting-code">¶</a>Quoting code</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Some basic Git commands are:</span><br><span class="line">`` ``` ``</span><br><span class="line">git status</span><br><span class="line">git add</span><br><span class="line">git commit</span><br><span class="line">`` ``` ``</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add</span><br><span class="line">git commit</span><br></pre></td></tr></table></figure>
-<p>For more information, see <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks" target="_blank" rel="noopener">creating-and-highlighting-code-blocks</a></p>
-<h3 id="links"><a class="header-anchor" href="#links">¶</a>Links</h3>
-<p>You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut command + k to create a link.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This site was built using [GitHub Pages](https://pages.github.com/).</span><br></pre></td></tr></table></figure>
-<h3 id="task-lists"><a class="header-anchor" href="#task-lists">¶</a>Task lists</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- [x] Finish my changes</span><br><span class="line">- [ ] Push my commits to GitHub</span><br><span class="line">- [ ] Open a pull request</span><br></pre></td></tr></table></figure>
-<p>like this:</p>
-<ul>
-<li>[x] Finish my changes</li>
-<li>[ ] Push my commits to GitHub</li>
-<li>[ ] Open a pull request</li>
-</ul>
-<h3 id="using-emoji"><a class="header-anchor" href="#using-emoji">¶</a>Using emoji</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@octocat :+1: This PR looks great - it&apos;s ready to merge! :shipit:</span><br></pre></td></tr></table></figure>
-<p>@octocat <img class="emoji" draggable="false" alt="👍" src="https://twemoji.maxcdn.com/2/72x72/1f44d.png"> This PR looks great - it’s ready to merge! :shipit:</p>
-<p>For a full list of available emoji and codes, check out <a href="http://emoji-cheat-sheet.com/" target="_blank" rel="noopener">emoji-cheat-sheet.com</a>.</p>
-<h2 id="reference"><a class="header-anchor" href="#reference">¶</a>Reference</h2>
-<p><strong><a href="https://help.github.com/categories/writing-on-github/" target="_blank" rel="noopener">writing-on-github</a></strong></p>
-
-          
+          <h1>Markdown syntax</h1>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/19/How-to-use-MarkDown/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -631,9 +695,9 @@ go to WSGI configuration file</li>
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T20:14:50+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-18T20:14:50+08:00">
                 2018-03-18
               </time>
             
@@ -750,9 +814,9 @@ go to WSGI configuration file</li>
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-18T19:44:46+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-18T19:44:46+08:00">
                 2018-03-18
               </time>
             
@@ -810,7 +874,8 @@ go to WSGI configuration file</li>
 <p>More info: <a href="http://very9s.net/post/hexo-support-emoji/" target="_blank" rel="noopener">markdown-it-emoji</a><br>
 <a href="https://segmentfault.com/a/1190000009478837" target="_blank" rel="noopener">CSS</a><br>
 <strong><a href="http://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">hexo-generator-search</a></strong><br>
-<a href="https://www.ezlippi.com/blog/2017/02/hexo-search.html" target="_blank" rel="noopener">search</a></p>
+<a href="https://www.ezlippi.com/blog/2017/02/hexo-search.html" target="_blank" rel="noopener">search</a><br>
+<a href="http://theme-next.iissnan.com/third-party-services.html#analytics-tencent" target="_blank" rel="noopener">第三方服务集成 - NexT 使用文档</a></p>
 
           
         
@@ -892,8 +957,8 @@ go to WSGI configuration file</li>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
@@ -905,8 +970,8 @@ go to WSGI configuration file</li>
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
                 
               </div>
             
@@ -952,7 +1017,7 @@ go to WSGI configuration file</li>
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -960,7 +1025,7 @@ go to WSGI configuration file</li>
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -969,6 +1034,15 @@ go to WSGI configuration file</li>
 
 
 
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65587731";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -1429,19 +1503,6 @@ go to WSGI configuration file</li>
   </script>
 
 
-
-
-  
-  
-  
-  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
-
-  
-  
-  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
-  
-
-  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
